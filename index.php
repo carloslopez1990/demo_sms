@@ -3,8 +3,6 @@
 	# Ejemplo de envío de sms utilizando webs de Claro y Movistar
 	# Creado por Carlos Ernesto López
 	# celopez1990.blogspot.com || facebook.com/c.ernest.1990
-
-	include 'config.php';
 	
 ?><!DOCTYPE html>
 <html lang="en">
