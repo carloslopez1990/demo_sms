@@ -1,0 +1,93 @@
+/* Ejemplo de envío de sms utilizando webs de Claro y Movistar
+   Creado por Carlos Ernesto López
+   celopez1990.blogspot.com || facebook.com/c.ernest.1990 */
+
+body {
+	background: #328D8B;
+	color: white;
+}
+
+form input, form select {
+	height: 50px !important;
+}
+
+form input, form textarea, form select {
+	border: 4px solid #9DD7C7 !important;
+	border-radius: 8px !important; 
+}
+
+#home_title {
+	font-family: '28 days later';
+	font-size: 80px;
+	padding: 20px;
+	line-height: 1em;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-radius: 10px;
+	text-shadow: #378876 1px 5px 10px;
+}
+
+#features {
+	margin-top: 0px;
+	text-shadow: #378876 1px 2px 5px;
+	border-radius: 10px;
+	padding-left: 80px !important;
+	font-family: 'Trebuchet MS';
+	font-size: 18px;
+	line-height: 1.8em
+}
+
+#features {
+	list-style: square;
+}
+
+.navbar {
+	background: none;
+	border: none;
+}
+
+.navbar a {
+	color: white !important;
+	font-size: 11px;
+}
+
+#topheader {
+	background: url( ../images/topheader.png );
+	height: 9px;
+}
+
+#fb-root {
+  display: none;
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+  border: none !important;
+}
+
+#sub {
+	font-size: 30px;	
+	font-family: '28 days later';
+	margin-bottom: 20px;
+}
+
+#mensaje {
+	margin-bottom: 5px;
+}
+
+#fbcont {
+	background: #499A98;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+#main {
+	margin-top: 25px;
+}
+
+.modal-body {
+	color: #666;
+	font-size: 20px;
+}
