@@ -36,7 +36,7 @@ function curl( $url, $fields = array(), $initsession = false, $referer = '') {
 }
 
 function enviarSMSMovistar( $destino, $mensaje ) {
-	$loginurl = 'https://www.movistar.com.ni/mhome/login.aspx';
+	$loginurl = 'https://www2.movistar.com.ni/mhome/login.aspx';
 
 	$login_get_info = curl( $loginurl, array(), true );
 
@@ -60,9 +60,9 @@ function enviarSMSMovistar( $destino, $mensaje ) {
 
 	curl( $loginurl, $data, false );
 
-	$envio_url = 'https://www.movistar.com.ni/Personas/Default.aspx';
+	$envio_url = 'https://www2.movistar.com.ni/Personas/Default.aspx';
 
-	$res = curl( $envio_url, array(), false, 'https://www.movistar.com.ni/Personas/Default.aspx' );
+	$res = curl( $envio_url, array(), false, 'https://www2.movistar.com.ni/Personas/Default.aspx' );
 
 	preg_match_all( '|<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="(.*?)" />|', $res, $matches );
 	$__EVENTVALIDATION = $matches[1][0];
@@ -81,7 +81,7 @@ function enviarSMSMovistar( $destino, $mensaje ) {
 		);
 
 
-	$info = curl( $envio_url, $data, false, 'https://www.movistar.com.ni/Personas/Default.aspx' );
+	$info = curl( $envio_url, $data, false, 'https://www2.movistar.com.ni/Personas/Default.aspx' );
 
 	if( preg_match('|Mensaje enviado|', $info) )
 		return true;
